@@ -1,5 +1,5 @@
 # Comandos para GIT
-· git clone (url) .
+· git clone (url) .     
 [Clonar el repositorio en local]
 
 · git status   
@@ -8,20 +8,20 @@
 · git add -A    
 [Trackear todos los archivos]
 
-. git commit -m "(mensaje para el commit)"
+. git commit -m "(mensaje para el commit)"      
 [Hacer un commit]
 
-· git pull origin master
+· git pull origin master        
 [Hacer un pull del repositorio y actualizar archivos locales. En este caso del branch "master"]
 
-· git push origin master
+· git push origin master        
 [Hacer un push y subir los cambios locales al repositorio. En este caso hacia el branch "master"]
 
-· git branch (nombre del branch)
+· git branch (nombre del branch)        
 [Crear un nuevo branch, en base a dónde estemos parados (master en general)]
 
-· git checkout (nombre del branch)
+· git checkout (nombre del branch)      
 [Cambiar de branch]
 
-· git log
+· git log       
 [Resumen de los commits que se fueron haciendo sobre el repositorio]
