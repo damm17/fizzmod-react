@@ -25,3 +25,12 @@
 
 · git log       
 [Resumen de los commits que se fueron haciendo sobre el repositorio]
+
+· git merge (nombre de la rama con cambios)         
+[Primero hago un checkout a master, luego el merge para unir la rama con el directorio principal.]
+
+· git branch -d/-D (nombre de la rama)      
+[Borrar una rama de forma local]
+
+· git push origin --delete (nombre de la rama)      
+[Borrar la rama del repositorio] 
