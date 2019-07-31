@@ -33,4 +33,13 @@
 [Borrar una rama de forma local]
 
 · git push origin --delete (nombre de la rama)      
-[Borrar la rama del repositorio] 
+[Borrar la rama del repositorio]
+
+· git show (hash)
+[Muestra detalles de un commit en particular]
+
+· git revert (hash)
+[revierte los cambios de uno más commits o un branch entero]
+
+· git reset (commit)
+[--soft / --mixed / --hard]->Tipos de reset
