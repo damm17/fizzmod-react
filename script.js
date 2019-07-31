@@ -1,3 +1,4 @@
+// CLASE 02
 // TIPOS DE DATOS
 
 // undefined : una variable sin valor
@@ -35,3 +36,5 @@ history.{back|forward|go(Number)} => Object - Nos permite jugar con el historial
 // document.querySelector()|document.querySelectorAll() -> selectores de CSS
 
 */
+
+// CLASE 03
