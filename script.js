@@ -34,7 +34,37 @@ history.{back|forward|go(Number)} => Object - Nos permite jugar con el historial
 // Creación de Nodo (Etiqueta) => document.createElement("div")
 // Selección de Nodo => document.getElementById()|getElementsByClassName()|getElementsByTagName() [Los dos ultimos devuelven un array]
 // document.querySelector()|document.querySelectorAll() -> selectores de CSS
-
 */
 
 // CLASE 03
+/* 
+var a = document.createElement("a");
+a.innerHTML = "Hola Mundo";
+// XSS = Cross-Site Scripting => Ataque JS con el innerHTML
+
+a.innerText = "lo que sea"; => Agrega texto plano
+//NodoTarget.appendChild(nuevoNodo);
+document.body.appendChild(a);
+
+a.dataset => seleccionar los "data-" definidos en html
+
+var a_copia = a.cloneNode(true); => Hacer una copia entera o parcial de un nodo.
+
+*/
+
+/* 
+EVENTOS 
+
+a.addEventListener("click", function(e){
+    console.log("asd");
+    e.stopPropagation();
+});
+
+a.addEventListener("click", (e)=>{
+    console.log("asd");
+    e.preventDefault();
+});
+
+
+
+*/
