@@ -64,7 +64,39 @@ a.addEventListener("click", (e)=>{
     console.log("asd");
     e.preventDefault();
 });
-
-
-
 */
+
+let a = document.querySelector("a");
+a.addEventListener("click", (e)=>{
+    e.preventDefault();
+    let p = document.createElement("p");
+    p.innerText = "Está seguro que quiere abandonar la página?";
+    let div = document.createElement("div");
+    let button_a = document.createElement("button");
+    button_a.innerText = "Aceptar";
+    button_a.id = "aceptar";
+    let button_b = document.createElement("button");
+    button_b.innerText = "Cancelar";
+    button_b.id = "cancelar";
+
+    let f = document.createDocumentFragment();
+    f.appendChild(p);
+    f.appendChild(button_a);
+    f.appendChild(button_b);
+
+
+    document.body.appendChild(div);
+    let div_dom = document.querySelector("div");
+    div_dom.appendChild(f);
+
+    let body = document.body;
+    body.addEventListener("click", e=>{
+        if (e.target.id == "aceptar") {
+            window.location.href ="https://google.com";
+            console.log("aasd");
+        } else if (e.target.id == "cancelar") {
+            document.body.removeChild(div);
+        }
+    });
+});
+
