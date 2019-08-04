@@ -1,45 +1,8 @@
-# Comandos para GIT
-· git clone (url) .     
-[Clonar el repositorio en local]
-
-· git status   
-[Chequear el estado para ver si hay commits pendientes o archivos sin trackear]
-
-· git add -A    
-[Trackear todos los archivos]
-
-. git commit -m "(mensaje para el commit)"      
-[Hacer un commit]
-
-· git pull origin master        
-[Hacer un pull del repositorio y actualizar archivos locales. En este caso del branch "master"]
-
-· git push origin master        
-[Hacer un push y subir los cambios locales al repositorio. En este caso hacia el branch "master"]
-
-· git branch (nombre del branch)        
-[Crear un nuevo branch, en base a dónde estemos parados (master en general)]
-
-· git checkout (nombre del branch)      
-[Cambiar de branch]
-
-· git log       
-[Resumen de los commits que se fueron haciendo sobre el repositorio]
-
-· git merge (nombre de la rama con cambios)         
-[Primero hago un checkout a master, luego el merge para unir la rama con el directorio principal.]
-
-· git branch -d/-D (nombre de la rama)      
-[Borrar una rama de forma local]
-
-· git push origin --delete (nombre de la rama)      
-[Borrar la rama del repositorio]
-
-· git show (hash)
-[Muestra detalles de un commit en particular]
-
-· git revert (hash)
-[revierte los cambios de uno más commits o un branch entero]
-
-· git reset (commit)
-[--soft / --mixed / --hard]->Tipos de reset
+# Ejercicio XHR - Clase 4
+ 
+1- Agarrar todos los links
+2- recorrer todos los links y asignarles un evento de click. El callback de todos los links tiene que EL MISMO
+3 - Cancelar el default
+4 - Iniciar un pedido XHR al href del link que corresponda
+5 - Con la respuesta , modificar el contenido del <main> 
+ 
