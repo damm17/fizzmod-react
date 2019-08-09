@@ -18,6 +18,14 @@ cada componente va en su propio archivo
 3- Todos los componentes de React tienen que retornar algo: Otro componente de React | String | DomNode (etiqueta)
 4- Todos los componentes de React van en Mayúscula
 5- Los componentes se escriben en JSX para ejecutarlos
+6- Todos los componentes pueden tener su propio estado (state) y/o pueden recibir parametros (props). El state, por default, solo se puede crear en un componente de tipo class y solo puede ser modificado por aquel componente que lo crea. Los props son de solo lectura y se pasan en JSX como atributos de HTML.
+7- El pasaje de informacion de componente a componente es unidireccional y solo puede ir de componente padre a componente hijo. 
 */
+
+* PROPS DISPONIBLES
+<Foo test={1+1} /> == Expresión, siempre entre {}
+<Foo test={()=>{}} /> == Expresión
+<Foo test="string" /> == String
+<Foo test /> == Boolean (true) -> Prop vacío
 
 tinyurl.com/y4s45u3f
