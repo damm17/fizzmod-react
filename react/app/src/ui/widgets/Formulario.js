@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 
-class Formulario extends Component{
+class Formulario extends Component {
     render() {
+        let {handleSubmit,handleChange,usuario} = this.props
         return (
-            <form action="" onSubmit={}>
-                <input type="text" onChange={} placeholder="Usuario"/>
+            <form action="" onSubmit={handleSubmit}>
+                <input type="text" placeholder="Usuario" onChange={handleChange} value={usuario}/>
                 <button>Guardar</button>
             </form>
         )

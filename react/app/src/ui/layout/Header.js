@@ -8,7 +8,7 @@ class Header extends Component{
                 <h1>SPA</h1>
                 <nav>
                     {links.map(link =>
-                        <a href="#" key={link}>{link}</a>
+                        <a href={`${link}.html`} key={link}>{link}</a>
                     )}
                 </nav>
             </header>
