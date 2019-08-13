@@ -13,7 +13,8 @@ class App extends Component{
             links : ["perfil", "portfolio", "contacto"],
             contador : 0,
             usuario : "",
-            mostrar : false
+            mostrar : false,
+            usuarios : []
         }
         this.aumentarContador = this.aumentarContador.bind(this)
         this.mostrarFormulario = this.mostrarFormulario.bind(this)
@@ -31,10 +32,16 @@ class App extends Component{
     }
     handleSubmit(e){
         e.preventDefault();
+        // LA VIEJA FORMA
+        // let copia = this.state.usuarios.slice(0)
+        // copia.push(this.state.usuario)
+        this.setState({ 
+            usuarios : [...this.state.usuarios, this.state.usuario], 
+            usuario : "" })
     }
     
     render(){
-        let {links, contador, usuario, mostrar} = this.state
+        let {links, contador, usuario, mostrar, usuarios} = this.state
         return (
             <Fragment>
                 <Header links={links} />
@@ -42,7 +49,7 @@ class App extends Component{
                 <p>Contador : {contador}</p>
                 <button onClick={this.aumentarContador}>+</button>
                 {mostrar ?
-                    <Formulario handleChange={this.handleChange} handleSubmit={this.handleSubmit} usuario={usuario}/>
+                    <Formulario handleChange={this.handleChange} handleSubmit={this.handleSubmit} usuario={usuario} usuarios={usuarios}/>
                     : null
                 }
                 <button onClick={this.mostrarFormulario}>mostrar</button>
