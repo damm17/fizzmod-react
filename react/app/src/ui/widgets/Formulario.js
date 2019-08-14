@@ -6,6 +6,7 @@ class Formulario extends Component {
         let {handleSubmit,handleChange,usuario, usuarios} = this.props
         return (
             <Fragment>
+                <button onClick={this.mostrarFormulario}>mostrar</button>
                 <form action="" onSubmit={handleSubmit}>
                     <input type="text" placeholder="Usuario" onChange={handleChange} value={usuario}/>
                     <button>Guardar</button>

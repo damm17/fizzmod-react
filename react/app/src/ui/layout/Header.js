@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import {connect} from "react-redux"
 
 class Header extends Component{
     render(){
@@ -16,4 +17,6 @@ class Header extends Component{
     }
 }
 
-export default Header
+let mapStateToProps = store => ({links : store.links})
+
+export default connect(mapStateToProps,null)(Header)

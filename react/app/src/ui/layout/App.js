@@ -10,19 +10,13 @@ class App extends Component {
     constructor(){
         super()
         this.state = {
-            links : [ "perfil" , "portfolio" , "contacto" ],
             mostrar : false,
             usuario : "",
             usuarios : []
         }
-        this.aumentarContador = this.aumentarContador.bind(this)
         this.mostrarFormulario = this.mostrarFormulario.bind(this)
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
-    }
-
-    aumentarContador(){
-        this.setState({ contador : this.state.contador + 1 })
     }
 
     mostrarFormulario(){
@@ -45,7 +39,7 @@ class App extends Component {
         let {links,contador,mostrar,usuario,usuarios} = this.state
         return (
             <Fragment>
-                <Header links={links}/>
+                <Header/>
                 <Contador/>
                 {mostrar ? 
                     <Formulario 
