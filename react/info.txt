@@ -30,4 +30,16 @@ cada componente va en su propio archivo
 
 tinyurl.com/y4s45u3f
 
-commit
+
+
+// JSON SERVER
+npm i --save -g json-SERVER
+json-server 
+
+fetch(ruta, {
+    method: "GET|POST|PUT|DELETE",
+    headers: {
+        "content-type" : "application/json"
+    },
+    body : JSON.stringify({edad : 30})
+})
